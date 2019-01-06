@@ -1,12 +1,12 @@
-//$fn=100;
+$fn=25;
 
 HEIGHT=4.8;
 WIDTH=35;
-DEPTH=22;
+DEPTH=22; // ->23
 
 module base() {
 linear_extrude(center=true,height=HEIGHT) 
-    import(file="wolfcraft.dxf",scale=WIDTH/100);
+    import(file="wolfcraft.dxf",scale=WIDTH*23/22/100);
 }
 
 module roundedRect(size, radius)
